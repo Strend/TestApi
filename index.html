@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRON SPIRIT | Support 1st Mechanized Battalion AZOV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Metropolis:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root { --azov-yellow: #ffcc00; --azov-black: #0b0b0b; --azov-grey: #151515; }
+        body { background-color: var(--azov-black); color: #e5e7eb; font-family: 'Metropolis', sans-serif; scroll-behavior: smooth; }
+        .oswald { font-family: 'Oswald', sans-serif; text-transform: uppercase; }
+        .text-yellow { color: var(--azov-yellow); }
+        .bg-yellow { background-color: var(--azov-yellow); }
+        .border-yellow { border-color: var(--azov-yellow); }
+
+        .btn-primary {
+            background-color: var(--azov-yellow); color: #000; font-weight: 900;
+            padding: 1rem 2.5rem; text-transform: uppercase; transition: 0.3s;
+            box-shadow: 0 0 20px rgba(255, 204, 0, 0.3);
+        }
+        .btn-primary:hover { transform: scale(1.05); box-shadow: 0 0 30px rgba(255, 204, 0, 0.5); }
+
+        .symbol-in {
+            width: 45px; height: 45px; position: relative;
+            background: var(--azov-yellow); clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            display: flex; align-items: center; justify-content: center;
+        }
+        .symbol-in::after { content: "N"; font-family: 'Oswald'; font-weight: bold; color: black; font-size: 24px; transform: skewX(-15deg); }
+
+        .hero-bg {
+            background: linear-gradient(rgba(11,11,11,0.9), rgba(11,11,11,0.8)), url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809?q=80&w=2000');
+            background-size: cover; background-position: center;
+        }
+        .history-card { background: var(--azov-grey); border-left: 4px solid var(--azov-yellow); padding: 2rem; margin-bottom: 2rem; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-black/95 border-b-2 border-yellow py-4 px-8 flex justify-between items-center shadow-2xl">
+        <div class="flex items-center space-x-4">
+            <div class="symbol-in"></div>
+            <div class="flex flex-col leading-none">
+                <span class="oswald text-xl font-bold tracking-tighter">IRON SPIRIT</span>
+                <span class="text-[10px] uppercase tracking-widest text-yellow font-black">1st Battalion Azov</span>
+            </div>
+        </div>
+        <a href="#donate" class="btn-primary py-2 px-6 text-sm hidden md:block">Donate Now</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg min-h-screen flex flex-col justify-center items-center text-center px-6 pt-24">
+        <div class="max-w-5xl">
+            <h1 class="oswald text-6xl md:text-9xl font-bold mb-4 leading-none">DEFENDERS OF <br> <span class="text-yellow">FREEDOM</span></h1>
+            <p class="text-xl md:text-2xl font-black text-gray-400 uppercase tracking-[0.4em] mb-12">United for Victory • Since 2014</p>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center bg-black/60 p-10 rounded-2xl border border-white/5 backdrop-blur-md">
+                <div class="text-left">
+                    <h2 class="oswald text-3xl mb-4 text-yellow">Target: Battlefield Superiority</h2>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        The 1st Mechanized Battalion of the Azov Brigade is the elite spearhead of Ukrainian resistance.
+                        In modern warfare, courage is multiplied by technology. We provide the steel; you provide the edge.
+                    </p>
+                    <div class="flex items-center space-x-6">
+                        <a href="#donate" class="btn-primary text-sm">Join the Mission</a>
+                        <span class="text-xs uppercase font-black text-gray-500 tracking-widest border-l border-white/20 pl-4">Direct Military <br> Supply Line</span>
+                    </div>
+                </div>
+                <div class="text-right border-l border-yellow/20 pl-8">
+                    <p class="oswald text-sm text-gray-500 mb-2">Current Collection: Drones & Optics</p>
+                    <p class="oswald text-5xl font-bold text-yellow mb-4 leading-none">$36,840 / $50,000</p>
+                    <div class="w-full h-4 bg-gray-900 rounded-none border border-yellow/10">
+                        <div class="h-full bg-yellow" style="width: 73.6%"></div>
+                    </div>
+                    <p class="text-[10px] uppercase font-black text-gray-600 mt-2 tracking-widest italic">73% of Goal Reached • Support the final push</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Narrative Section: The History -->
+    <section id="history" class="py-32 px-8 bg-black">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="oswald text-4xl md:text-5xl mb-16 border-b-4 border-yellow inline-block">The Azov Legacy</h2>
+
+            <div class="space-y-12">
+                <div class="history-card">
+                    <h3 class="oswald text-2xl text-yellow mb-4">I. Born in Fire (2014 - 2022)</h3>
+                    <p class="text-gray-400 leading-relaxed italic">
+                        The Azov Brigade began as a volunteer unit, formed by those who refused to let their country fall. For 8 years, they held the line in Donbas, evolving into one of the most professional and disciplined units in the Ukrainian Armed Forces. They became the shield that the enemy could never break.
+                    </p>
+                </div>
+
+                <div class="history-card">
+                    <h3 class="oswald text-2xl text-yellow mb-4">II. The Fortress of Mariupol</h3>
+                    <p class="text-gray-400 leading-relaxed italic">
+                        In 2022, the world watched Azov defend Mariupol for 86 days of total encirclement. Against a force 10 times their size, they turned the Azovstal steel plant into an impregnable fortress. They didn't just fight; they showed the world that freedom is worth the ultimate price. The 1st Mechanized Battalion carries this spirit into every battle today.
+                    </p>
+                </div>
+
+                <div class="history-card">
+                    <h3 class="oswald text-2xl text-yellow mb-4">III. Today: The Mechanized Spearhead</h3>
+                    <p class="text-gray-400 leading-relaxed italic">
+                        Today, the 1st Mechanized Battalion operates as an elite mobile force. We specialize in high-intensity urban warfare and rapid mechanized assaults. Every vehicle we operate and every drone we fly is a tool used to reclaim sovereign territory and protect democratic values on the global frontline.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Explanation: Why Crypto for USA -->
+    <section class="py-32 bg-azov-grey px-8 border-y-2 border-yellow/10">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="oswald text-4xl mb-8">Why Your Support <span class="text-yellow italic">Matters Now</span></h2>
+                <div class="space-y-6 text-gray-300">
+                    <p>
+                        <strong class="text-white">Cutting the Red Tape:</strong> Traditional aid can take months to reach the front. The Iron Spirit Initiative uses decentralized funding (USDT) to procure critical equipment—like Mavic 3T thermal drones and night vision—within 48 hours of your donation.
+                    </p>
+                    <p>
+                        <strong class="text-white">Technological Dominance:</strong> We don't fight like it's the 20th century. We use reconnaissance-strike complexes to save the lives of our soldiers. Your donation buys the eyes of our unit.
+                    </p>
+                    <p>
+                        <strong class="text-white">A Global Struggle:</strong> This isn't just a border conflict. It's the frontline of the Western world. By supporting Azov, you are standing with the values of the United States and all free nations.
+                    </p>
+                </div>
+            </div>
+            <div class="bg-black p-8 border-2 border-yellow rounded-xl text-center">
+                <h3 class="oswald text-2xl mb-6">Direct Impact Stats</h3>
+                <div class="space-y-8">
+                    <div>
+                        <p class="text-5xl font-black text-white oswald">$750K+</p>
+                        <p class="text-[10px] uppercase font-black text-yellow tracking-widest mt-2">Aid Delivered Directly</p>
+                    </div>
+                    <div>
+                        <p class="text-5xl font-black text-white oswald">0%</p>
+                        <p class="text-[10px] uppercase font-black text-yellow tracking-widest mt-2">Administrative Fees</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section id="donate" class="py-32 px-8 bg-black">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="oswald text-5xl mb-8">Deploy Your <span class="text-yellow">Support</span></h2>
+            <p class="text-gray-500 uppercase font-black tracking-widest mb-16 text-sm">Secure USDT TRC-20 Transaction</p>
+
+            <div class="bg-azov-grey p-10 md:p-16 border-t-8 border-yellow shadow-[0_0_60px_rgba(0,0,0,1)]">
+                <div class="flex flex-col items-center">
+                    <div class="bg-white p-4 rounded-xl mb-10 shadow-2xl">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=TSMx2ADwCjauUEznZYT9qZ1AQqKciRMios" class="w-48 h-48 sm:w-64 sm:h-64">
+                    </div>
+
+                    <p class="text-xs uppercase font-black text-gray-500 mb-4 tracking-[0.3em]">Copy Official TRC-20 Address</p>
+                    <div class="flex items-center space-x-3 bg-black border border-yellow/30 p-5 rounded-lg w-full max-w-lg mb-10">
+                        <code id="wallet" class="text-yellow font-black text-xs md:text-sm break-all flex-1">TSMx2ADwCjauUEznZYT9qZ1AQqKciRMios</code>
+                        <button onclick="copyWallet()" class="bg-yellow p-3 rounded hover:bg-white transition active:scale-90">
+                            <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+                        </button>
+                    </div>
+
+                    <button onclick="copyWallet()" class="btn-primary w-full max-w-lg text-xl tracking-widest">SEND SUPPORT NOW</button>
+                    <p class="mt-8 text-xs text-gray-600 font-bold uppercase tracking-widest italic animate-pulse">Connection: TRC-20 (TRON) Verified</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-20 bg-black border-t-2 border-yellow text-center">
+        <div class="symbol-in mx-auto mb-8 opacity-20"></div>
+        <p class="oswald text-sm font-bold tracking-[0.3em] text-gray-700 italic">Iron Spirit Initiative • Slava Ukraini • 2026</p>
+    </footer>
+
+    <script>
+        function copyWallet() {
+            const wallet = 'TSMx2ADwCjauUEznZYT9qZ1AQqKciRMios';
+            navigator.clipboard.writeText(wallet).then(() => {
+                alert('Success: Address copied to clipboard!');
+            });
+        }
+    </script>
+</body>
+</html>
